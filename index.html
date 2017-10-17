@@ -15,10 +15,10 @@
 <body>
   <header>
     <nav class="container">
-      <div class="navbar">
+      <div class="one-half">
         <a href="index.html" class="site-logo"><img src="images/CumulusLogo.png" alt="cumulus logo" /></a>
       </div>
-      <div class="navbar">
+      <div class="one-half">
         <ul>
           <li><a href="signin.html">Sign In</a></li>
           <li class="btn-outline"><a href="signup.html">Sign Up</a></li>
@@ -26,28 +26,25 @@
       </div>
     </nav>
     <div class="container hero">
-      <h1>Save, share and collaborate.</h1>
+      <h1>Save, Share and Collaborate.</h1>
       <p>Cumulus lets you collect and sort information.<br/>Keep notes, images, and links all in one place and access them from anywhere.</p>
       <a href="signup.html" class="btn">Start Your Free Trial!</a>
-      <img src="images/cumulushero.jpg" alt="cumulus background" />
     </div>
   </header>
 
   <section>
     <div class="why-cumulus">
-      <hr>
       <h2>Why Choose Cumulus?</h2>
-      <hr>
-      <p>Cumulus isn’t designed for one customer. Whether you like building inspiration boards, saving your favorite images from the web, being able to access your grocery list from any device or collaborating with members of your start up we have it all.
+      <p class="cumulus-p">Cumulus isn’t designed for one customer. Whether you like building inspiration boards, saving your favorite images from the web, being able to access your grocery list from any device or collaborating with members of your start up we have it all.
         Check out some of our features below.</p>
     </div>
   </section>
 
   <section class="grid-1">
-    <div class="features-img">
-      <img src="images/notes.jpg" alt="notes" />
+    <div class="features-img box-1">
+      <img src="images/notes.jpg" alt="notes" class="responsive-image" />
     </div>
-    <div class="features-content">
+    <div class="features-content features-space box-2">
       <h2>Create Notes</h2>
       <hr>
       <p>Using Markdown, you can create simple text based documents to save and share. You can collaborate with others to write and edit content.</p>
@@ -56,22 +53,22 @@
   </section>
 
   <section class="grid-1">
-    <div class="features-content">
+    <div class="features-content features-space box-3">
       <h2>Save Images</h2>
       <hr>
       <p>Using Markdown, you can create simple based documents to save and share. You can collaborate with others to write and edit content.</p>
       <a href="signup.html" class="btn">Start Your Free Trial!</a>
     </div>
-    <div class="features-img">
-      <img src="images/images.jpg" alt="images" />
+    <div class="features-img box-4">
+      <img src="images/images.jpg" alt="images" class="responsive-image" />
     </div>
   </section>
 
   <section class="grid-1">
-    <div class="features-img">
-      <img src="images/laptop.jpg" alt="links" />
+    <div class="features-img box-5">
+      <img src="images/laptop.jpg" alt="links" class="responsive-image" />
     </div>
-    <div class="features-content">
+    <div class="features-content features-space box-6">
       <h2>Add Links</h2>
       <hr>
       <p>Forget bookmarking sites in your browser. With Cumulus you can add links, group them and view them from any computer.</p>
@@ -81,20 +78,19 @@
 
   <section class="pricing">
     <div class="container">
-      <hr>
-      <h2>How much does blocbox cost?</h2>
-      <hr>
+      <h2>How much does Cumulus cost?</h2>
       <p>We have many options to fit your needs. It's free to try for 30 days*, and you can always change your plan once you signed up. <br/>Here are the different features of each plan:</p>
     </div>
     <ul class="grid-2">
       <li class="one-third">
         <div class="box">
-          <h3>Casual</h3>
+          <h3 >Casual</h3>
           <h4>Free</h4>
           <ul>
             <li>Up to 5 boxes</li>
             <li>Up to 10 collaborators</li>
             <li><strong>2GB</strong> of storage</li>
+            <br>
           </ul>
           <a href="signup.html" class="btn">Start Your Free Trial!</a>
         </div>
@@ -126,28 +122,28 @@
         </div>
       </li>
     </ul>
+    <div class="container">
+      <p class="small">*We will not collect your credit card information until your 30-day trial has ended.</p>
+    </div>
   </section>
 
   <section class="dashboard-example">
-    <img src="images/Macbook.jpg" alt="dashboard example on laptop" />
+    <img src="images/Macbook.jpg" alt="dashboard example on laptop" class="responsive-image macbook-image" />
   </section>
 
   <footer>
-    <div class="container footer-nav-block">
-      <div class="left-footer-block one-third">
+    <div class="container">
+      <div class="left-footer-block">
         <p class="copyright-block">&copy; 2017. <strong>Cumulus</strong> - All Rights Reserved.</p>
       </div>
-      <nav class="link-block middle-footer-block one-third">
+      <div class="link-block">
         <ul>
-          <li><a href="">Terms</a></li> /
-          <li><a href="">Privacy Policy</a></li> /
-          <li><a href="">Contact Us</a></li> /
-          <li><a href="">About Us</a></li> /
+          <li><a href="">Terms</a></li> |
+          <li><a href="">Privacy Policy</a></li> |
+          <li><a href="">Contact Us</a></li> |
+          <li><a href="">About Us</a></li> |
           <li><a href="">Twitter</a></li>
         </ul>
-      </nav>
-      <div class="right-footer-block one-third">
-        <img class="logo" src="images/CumulusLogo.png" alt="Cumulus" />
       </div>
     </div>
   </footer>
