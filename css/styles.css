@@ -229,6 +229,10 @@ header .hero a:hover {
   margin-top: 25px;
 }
 
+.box:hover {
+    box-shadow: 3px 3px 3px 3px #E2E2E2;
+}
+
 .box h3 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 600;
@@ -346,6 +350,10 @@ footer ul li a:hover {
   .box-4 {
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .box.middle {
+    min-height: 380px;
   }
 
   footer {
