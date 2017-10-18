@@ -340,6 +340,9 @@ footer ul li a:hover {
   .box-1 {
     margin-top: 0;
   }
+  .box-2 {
+    margin-top: 15%;
+  }
   .grid-2 {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
