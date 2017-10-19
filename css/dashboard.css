@@ -5,12 +5,24 @@
 body {
   margin: 40px;
   font-family: 'Raleway', sans-serif;
-  background-color: #3498D8;
+  background: #3498d8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3498d8 0%, #e2e2e2 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3498d8 0%, #e2e2e2 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3498d8 0%, #e2e2e2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   color: #333333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
+}
+
 .logo {
-  padding-right: 40%;
+  padding: 20% 0 0 35%;
+  background-color: #5F81A3;
 }
 
 aside {
@@ -60,11 +72,21 @@ footer ul li a:hover {
   .sidebar {
     grid-template-columns: 1fr,
   }
-  .user-avatar h2 {
+  .account-info {
     float: right;
   }
-  .user-avatar h2, a {
-    float: right;
+  .account-info h2 {
+    color: #fff;
+    display: inline;
+    margin-top: 20px;
+  }
+  .account-info p {
+    display: inline;
+    color: #fff;
+  }
+  .fa-sign-out {
+    display: inline;
+    color: #fff;
   }
   .wrapper {
     margin: 0 auto;
