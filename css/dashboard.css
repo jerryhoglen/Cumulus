@@ -27,10 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 
 aside {
   background-color: #5F81A3;
+  color: #fff;
+  padding-top: 5%;
+  padding-left: 10%;
+}
+
+aside h3 {
+  padding-top: 15px;
 }
 
 #left-nav ul li {
   list-style-type: none;
+  line-height: 19px;
   padding: 10px;
 }
 
@@ -40,6 +48,10 @@ aside {
   float: left;
 }
 
+#left-nav ul li a:hover {
+  color: #333333;
+}
+
 .wrapper {
   max-width: 1020px;
   margin: 0 20px;
@@ -47,25 +59,29 @@ aside {
   grid-gap: 10px;
 }
 
+.content h1 {
+  color: #fff;
+}
+
 footer {
-  background-color: #E2E2E2;
+  background-color: #5F81A3;
   text-align: center;
 }
 
 footer ul li {
   display: inline;
   list-style-type: none;
-  color: #3333333;
+  color: #ffffff;
 }
 
 footer ul li a {
   text-decoration: none;
-  color: #3333333;
+  color: #ffffff;
   padding: 10px;
 }
 
 footer ul li a:hover {
-  color: #ffffff;
+  color: #333333;
 }
 
 @media screen and (min-width: 500px) {
