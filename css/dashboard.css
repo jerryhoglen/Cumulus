@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
   padding: 20% 0 0 35%;
-  background-color: #5F81A3;
 }
 
 aside {
@@ -39,6 +38,7 @@ aside h3 {
   list-style-type: none;
   line-height: 19px;
   padding: 10px;
+  margin-bottom: 2%;
 }
 
 #left-nav ul li a {
@@ -52,14 +52,17 @@ aside h3 {
 }
 
 .wrapper {
-  max-width: 1020px;
   margin: 0 20px;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .content h1 {
   color: #fff;
+}
+
+section {
+  background-color: none;
 }
 
 footer {
@@ -85,7 +88,7 @@ footer ul li a:hover {
 
 @media screen and (min-width: 500px) {
   .sidebar {
-    grid-template-columns: 1fr,
+    grid-template-columns: 1fr;
   }
   .account-info {
     float: right;
@@ -93,7 +96,6 @@ footer ul li a:hover {
   .account-info h2 {
     color: #fff;
     display: inline;
-    margin-top: 20px;
   }
   .account-info p {
     display: inline;
@@ -112,13 +114,25 @@ footer ul li a:hover {
   }
   .wrapper .boxes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 277px 278px 278px 278px;;
+    grid-template-rows: repeat(2, auto);
     grid-gap: 20px;
   }
-  .wrapper .boxes .inner-box {
+  /*.wrapper .boxes .inner-box {
     border: solid white 2px;
+  }*/
+  .box-5 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
   }
+  .box-6 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .box-5, .box-6 {
+    margin-top: -336px;
+  }
+
   footer .left-footer-block {
     float: left;
     margin-left: 5%;
