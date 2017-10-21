@@ -38,7 +38,8 @@ p {
 }
 
 header {
-  background: url(/images/cumulushero.jpg) no-repeat center center fixed;
+  background: url(../images/cumulushero.jpg) no-repeat center center fixed;
+  background-color: #333333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
