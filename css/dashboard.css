@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20% 0 0 35%;
 }
 
+.content img {
+  height: 100%;
+  width: 100%;
+}
+
 aside {
   background-color: #5F81A3;
   color: #fff;
@@ -58,6 +63,7 @@ aside h3 {
 }
 
 .content h1 {
+  margin: 0 auto;
   color: #fff;
 }
 footer {
@@ -82,40 +88,49 @@ footer ul li a:hover {
 }
 
 @media screen and (min-width: 500px) {
-  .sidebar {
-    grid-template-columns: 1fr;
-  }
   .account-info {
+    color: #ffffff;
     float: right;
+    line-height: 0;
   }
-  .account-info h2 {
-    color: #fff;
-    display: inline;
+  .account-info ul{
+    list-style-type: none;
   }
-  .account-info p {
-    display: inline;
-    color: #fff;
+  .account-info ul li {
+    display: inline-block;
+  }
+  .account-info ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .account-info ul li a:hover {
+    color: #333333;
   }
   .fa-sign-out {
-    display: inline;
     color: #fff;
   }
   .wrapper {
     margin: 0 auto;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 200px 3fr;
+  }
+  .wrapper .sidebar {
+    grid-template-columns: 200px;
   }
   .footer {
     grid-column: 1 / -1;
   }
-  .wrapper .boxes {
+  .boxes {
     display: grid;
-    grid-template-columns: 277px 278px 278px 278px;;
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, minmax(150px, 300px));
     grid-gap: 20px;
   }
   /*.wrapper .boxes .inner-box {
     border: solid white 2px;
   }*/
+  .box-3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
   .box-5 {
     grid-column: 1 / span 2;
     grid-row: 2;
@@ -123,9 +138,6 @@ footer ul li a:hover {
   .box-6 {
     grid-column: 4;
     grid-row: 2;
-  }
-  .box-5, .box-6 {
-    margin-top: -336px;
   }
 
   footer .left-footer-block {
