@@ -81,7 +81,8 @@ header nav ul>li>a {
 }
 
 header nav ul>li.btn-outline:hover>a {
-  color: #333333;;
+  color: #333333;
+  ;
 }
 
 header .hero {
@@ -131,43 +132,14 @@ header .hero a {
   margin: 0 10% 0 10%;
 }
 
-.features-content h2 {
-  margin-bottom: 5%;
-}
-
-.features-content hr {
-  margin-bottom: 5%;
-}
-
-.features-content p {
-  margin-bottom: 5%;
-}
-
-.features-content a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.features-img {
-  margin-top: 15%;
-}
-
-.fa {
-  color: #5F81A3;
-  margin-bottom: 8%;
-}
-
 .grid-1 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 2%;
+  grid-template-columns: 1fr;
+  padding-top: 4%;
 }
 
-.box-3 {
-  grid-column: 1;
-  grid-row: 4;
+.grid-1 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .grid-2 {
@@ -328,7 +300,7 @@ footer ul li a:hover {
 
 @media (min-width: 768px) {
   header {
-    height: 800px;
+    height: 700px;
   }
   header nav ul {
     display: inline;
@@ -340,15 +312,66 @@ footer ul li a:hover {
     max-width: 940px;
     margin: 0 auto;
   }
-
   .features-content {
-    margin-top: 30%;
+    padding-top: 10%;
   }
-  .box-1 {
-    margin-top: 0;
+
+  .features-content h2 {
+    color: #ffffff;
+    margin: 0;
+    padding: 25% 0 5px 0;
+    border-bottom: solid 2px;
   }
-  .box-2 {
-    margin-top: 15%;
+
+  .features-content p {
+    color: #ffffff;
+  }
+
+  .features-content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .images-section a:hover {
+    background-color: #5F81A3;
+    color: #ffffff;
+  }
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 30vw 30vw 1fr;
+    grid-template-rows: 2vw 24vw 2vw;
+    grid-gap: 1.2em;
+    margin: 0 auto;
+  }
+  .features-img-1 {
+    background-image: url(../images/notes.jpg);
+    background-size: cover;
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+  }
+  .features-img-2 {
+    background-image: url(../images/images.jpg);
+    background-size: cover;
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 1;
+  }
+  .features-img-3 {
+    background-image: url(../images/laptop.jpg);
+    background-size: cover;
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+  }
+  .features-background-1 {
+    background: #3498D8;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 4;
+    margin: 0 -500px;
+  }
+  .features-background-2 {
+    background: #E2E2E2;
+    grid-row: 2 / 3;
+    grid-column: 1 / span 4;
+    margin: 0 -500px;
   }
   .grid-2 {
     grid-template-columns: repeat(3, 1fr);
@@ -358,14 +381,6 @@ footer ul li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
-  }
-  .box-3 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .box-4 {
-    grid-column: 2;
-    grid-row: 2;
   }
   .box.middle {
     min-height: 430px;
