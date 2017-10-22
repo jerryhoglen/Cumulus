@@ -119,12 +119,15 @@ header h3 {
   }
   .copyright-block {
     display: inline;
-    margin-top: 10px;;
+    margin-top: 10px;
+    font-size: 16px;
   }
   .link-block ul {
     float: right;
     margin-top: -1px;
     display: inline;
-    font-size: 14px;
+  }
+  .link-block ul li {
+    font-size: 16px;
   }
 }
