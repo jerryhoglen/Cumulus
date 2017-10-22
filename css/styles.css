@@ -315,18 +315,15 @@ footer ul li a:hover {
   .features-content {
     padding-top: 10%;
   }
-
   .features-content h2 {
     color: #ffffff;
     margin: 0;
     padding: 25% 0 5px 0;
     border-bottom: solid 2px;
   }
-
   .features-content p {
     color: #ffffff;
   }
-
   .features-content a {
     text-decoration: none;
     color: #ffffff;
