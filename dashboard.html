@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bitter|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/dropit.css">
   <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 
@@ -20,12 +21,18 @@
       <img src="images/Avatarimage.png" alt="user avatar" id="profile-image" />
       <h3>Jerry Hoglen</h3>
       <div class="nav-list">
-        <ul>
-          <li><a href="#" class="add-new"><i class="fa fa-plus-circle" aria-hidden="true">&nbsp</i>Add New  |</a></li>
-          <li><a href="#" class="all-items"><i class="fa fa-th" aria-hidden="true">&nbsp</i>All Items |</a></li>
-          <li><a href="#" class="view-boxes"><i class="fa fa-archive" aria-hidden="true">&nbsp</i>View Boxes |</a></li>
-          <li><a href="#" class="sign-out"><i class="fa fa-sign-out" aria-hidden="true">&nbsp</i>Sign Out</a></li>
-        </ul>
+            <ul class="menu">
+                <li><a href="#" class="add-new btn"><i class="fa fa-plus-circle" aria-hidden="true">&nbsp</i>Add New  |</a>
+                <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+                </ul>
+                <li><a href="#" class="all-items"><i class="fa fa-th" aria-hidden="true">&nbsp</i>All Items |</a></li>
+                <li><a href="#" class="view-boxes"><i class="fa fa-archive" aria-hidden="true">&nbsp</i>View Boxes |</a></li>
+                <li><a href="#" class="sign-out"><i class="fa fa-sign-out" aria-hidden="true">&nbsp</i>Sign Out</a></li>
+              </li>
+            </ul>
       </div>
     </div>
   </header>
@@ -67,6 +74,11 @@
     </div>
     </div>
   </footer>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/dropit.js"></script>
+  <script type="text/javascript">
+    $(".menu").dropit();
+  </script>
 </body>
 
 
