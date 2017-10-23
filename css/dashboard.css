@@ -98,7 +98,8 @@ header h3 {
     padding: 5px;
   }
   .nav-list {
-    padding: 5px 0 0 0;
+    margin-left: -45px;
+    padding: 15px 0 0 0;
   }
   .nav-list a:hover {
     color: #333333;
