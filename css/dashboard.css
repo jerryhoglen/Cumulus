@@ -318,18 +318,21 @@ footer {
     grid-column: 2 / span 2;
   }
   footer {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-  .link-block ul {
-    float: right;
-    margin-top: -1px;
-    display: inline;
+    margin: 25px 0 25px 0;
+    margin-left: 10%;
+    margin-right: 10%;
+
   }
   .copyright-block {
     font-size: 18px;
     display: inline;
   }
+  .link-block ul {
+    margin-right: 20%;
+    float: right;
+    margin-top: -30px;
+  }
+
   .link-block ul li {
     font-size: 18px;
   }
