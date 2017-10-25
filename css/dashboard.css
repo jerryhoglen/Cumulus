@@ -51,6 +51,57 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10px;
   color: #ffffff;
 }
+.box-1 {
+  background: #333333;
+  color: #ffffff;
+}
+.box-1 h3 {
+  text-align: center;
+  padding: 10px;
+
+}
+.box-1 p {
+  font-size: 16px;
+  padding: 2px;
+}
+
+.box-2 {
+  background-image: url(../images/succulentimage.jpg);
+  background-size: cover;
+}
+
+.box-4 {
+  background-image: url(../images/mediumurl.jpg);
+  background-size: cover;
+}
+
+.box-5 {
+  background-image: url(../images/dribbleurl.jpg);
+  background-size: cover;
+}
+
+.box-6 {
+  background-image: url(../images/designimage.jpg);
+  background-size: cover;
+}
+
+.box-3 {
+  background: #34495E;
+  color: #ffffff;
+}
+.box-3 h3 {
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+
+}
+.box-3 p {
+  font-size: 16px;
+  padding: 2px;
+}
+
+.box-3 .second-list {
+  padding-top: 50px;
+}
 
 
 @media (max-width:768px) {
