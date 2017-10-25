@@ -13,24 +13,50 @@
 </head>
 
 <body>
-  <header>
-    <nav class="container">
-      <div class="one-half site-logo-box">
-        <a href="index.html" class="site-logo"><img src="images/CumulusLogo.png" alt="cumulus logo" /></a>
-      </div>
-      <div class="one-half">
-        <ul>
-          <li>Jerry Hoglen<br><a href="#"><i class="fa fa-sign-out">&nbsp</i>Sign Out</a></li>
-          <li><img src="images/Avatarimage.png" alt="user avatar" id="profile-image" /></li>
-        </ul>
-      </div>
-    </nav>
+  <header class="logo">
+    <a href="#" class="site-logo"><img src="images/CumulusLogo.png" /></a>
+    <ul id="profile-image">
+      <li><img src="images/Avatarimage.png" alt="user avatar" /></li>
+      <li>
+        <h3>Jerry Hoglen</h3></li>
+    </ul>
   </header>
 
-  <div class="photo-heading">
-    <h1>All Photos</h1>
-  </div>
-  <section class="photo-layout">
+  <nav>
+    <ul class="menu">
+      <li><a href="#0" class="dropdownStart"><i class="fa fa-plus-circle" aria-hidden="true">&nbsp</i>Add New</a>
+        <ul class="dropdown">
+          <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+          <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+          <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropdownStart"><i class="fa fa-th" aria-hidden="true">&nbsp</i>All Items</a>
+        <ul class="dropdown">
+          <li><a href="#0">Action</a></li>
+          <li><a href="#0">Another action</a></li>
+          <li><a href="#0">Something else here</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="dropdownStart"><i class="fa fa-archive" aria-hidden="true">&nbsp</i>View Boxes</a>
+        <ul class="dropdown">
+          <li><a href="#0">Action</a></li>
+          <li><a href="#0">Another action</a></li>
+          <li><a href="#0">Something else here</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp</i>Account Settings</a></li>
+      <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true">&nbsp</i>Sign Out</a></li>
+    </ul>
+    <div class="toggle">
+      <span class="span" id="one"></span>
+      <span class="span" id="two"></span>
+    </div>
+  </nav>
+
+  <section>
+        <h2>All Photos</h2>
+    <div class="photo-layout">
     <div class="box-1">
       <img src="images/pic-1.jpg" alt="succulents image" />
     </div>
@@ -79,6 +105,7 @@
     <div class="box-16">
       <img src="images/pic-16.jpg" alt="succulents image" />
     </div>
+  </div>
 
   </section>
 

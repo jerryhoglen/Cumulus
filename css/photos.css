@@ -1,3 +1,20 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
 body {
   height: 1000px;
   font-family: 'Raleway', sans-serif;
@@ -8,47 +25,113 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Bitter', serif;
 }
 
-.photo-heading h1 {
-  margin-left: 5%;
-  color: #fff;
+nav, section {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-header nav {
-  padding: 2em 0;
-  margin: 0 5% 0 5%;
-}
-
-header nav ul {
-  text-align: right;
-  float: right;
-  margin-top: -15%;
-}
-
-header nav ul>li {
-  color: #fff;
-  list-style-type: none;
-  margin: 0 15px;
+section h2 {
+  color: #ffffff;
+  margin-left: 52px;
+  padding-bottom: 10px;
 }
 
 #profile-image {
   display: none;
 }
 
-header nav ul>li>a {
-  color: #FFFFFF;
-  text-decoration: none;
+.site-logo {
+  display: none;
 }
 
-header nav ul li a:hover {
-  color: #34495E;
-}
 
 section img {
   height: 100%;
   width: 100%;
 }
+@media (max-width:768px) {
+  header {
+    margin: 20px 10% 0 10%;
+    width: 80%;
+  }
+  footer {
+    width: 80%;
+  }
+  nav {
+    width: 100%;
+    height: 45px;
+    display: block;
+    margin: 20px auto;
+    background: #transparent;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+  }
+  nav .menu {
+    position: absolute;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    top: 45px;
+    background: #3498D8;
+    transition: max-height 0.2s linear, opacity .4s linear;
+  }
+  .showMenu {
+    max-height: 145px !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+  }
+  nav a {
+    color: #ffffff;
+    background-color: #3498D8;
+  }
+  nav .menu li,
+  nav .menu li a {
+    display: block;
+  }
+  nav .menu li a {
+    padding: 10px 15px;
+    position: relative;
+  }
+  nav .menu li a:hover {
+    color: #777777;
+    background: #333333;
+  }
+  .dropdown {
+    display: none;
+  }
+  .showDropdown {
+    display: block;
+    background: #3498D8;
+  }
+  .toggle {
+    margin-right: 10px;
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    float: right;
+    z-index: 9999;
+    border: 2px solid #777777;
+    padding: 0px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+  }
+  .toggle .span {
+    display: block;
+    margin: 6px 0;
+    width: 17px;
+    height: 2px;
+    background: #333;
+  }
+  .toggle:hover >.span {
+    background: #777;
+  }
+}
 
-section {
+.photo-layout {
   margin: 0 5% 0 5%;
   grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 100px;
@@ -60,8 +143,8 @@ section img {
 
 footer {
   background-color: #E2E2E2;
-  height: 80px;
   text-align: center;
+  padding: 20px 0 40px 0;
 }
 
 footer ul li {
@@ -80,9 +163,6 @@ footer ul li a:hover {
   background-color: #333333;
 }
 
-footer {
-  height: 50px;
-}
 footer .left-footer-block {
   float: left;
   margin-left: 5%;
@@ -92,23 +172,75 @@ footer .link-block {
   margin-right: 5%;
 }
 
-@media (min-width: 680px) {
-  header nav ul {
-    display: inline;
-    text-align: right;
-    float: right;
-    margin-top: -5%;
+@media (min-width: 768px) {
+  header {
+    margin: 20px 10% 0 10%;
+    width: 80%;
   }
-  header nav ul>li {
-    color: #fff;
-    list-style-type: none;
+  nav {
+    max-width: 960px;
+    min-height: 40px;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    background: #transparent;
+    font-size: 20px;
+    text-align: center;
+  }
+  nav a {
+    color: #ffffff;
+  }
+  nav .menu li,
+  nav .menu li a {
     display: inline-block;
-    margin: 0 15px;
+  }
+  nav .menu li a {
+    padding: 15px 20px;
+    position: relative;
+  }
+  nav .menu li a:hover {
+    color: #333333;
+  }
+  .dropdown {
+    position: absolute;
+    background: #3498D8;
+    border-radius: 4px;
+    border: solid #fff 2px;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    z-index: 999;
+  }
+  .dropdown li,
+  .dropdown li a {
+    display: block !important;
+    padding: none;
+  }
+  .dropdown li a {
+    padding: 10px 15px !important;
+  }
+  .menu li:hover > .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  #profile-image li {
+    float: right;
+    display: inline;
+  }
+  #profile-image li h3 {
+    color: #ffffff;
+    margin-top: 30px;
+    padding-right: 5px;
   }
   #profile-image {
     display: contents;
   }
-  section {
+  .site-logo {
+    display: contents;
+  }
+  .photo-layout {
     margin: 0 auto;
     padding: 0 5% 5% 5%;
     display: grid;

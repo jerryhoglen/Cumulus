@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     background: #3498D8;
     border-radius: 4px;
+    border: solid #fff 2px;
     transition: all 0.2s linear;
     visibility: hidden;
     opacity: 0;
