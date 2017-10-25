@@ -44,6 +44,71 @@ section h2 {
   display: none;
 }
 
+.box-1 {
+  background-image: url(../images/pic-1.jpg);
+  background-size: cover;
+}
+.box-2 {
+  background-image: url(../images/pic-2.jpg);
+  background-size: cover;
+}
+.box-3 {
+  background-image: url(../images/pic-3.jpg);
+  background-size: cover;
+}
+.box-4 {
+  background-image: url(../images/pic-4.jpg);
+  background-size: cover;
+}
+.box-5 {
+  background-image: url(../images/pic-5.jpg);
+  background-size: cover;
+}
+.box-6 {
+  background-image: url(../images/pic-6.jpg);
+  background-size: cover;
+}
+.box-7 {
+  background-image: url(../images/pic-7.jpg);
+  background-size: cover;
+}
+.box-8 {
+  background-image: url(../images/pic-8.jpg);
+  background-size: cover;
+}
+.box-9 {
+  background-image: url(../images/pic-9.jpg);
+  background-size: cover;
+}
+.box-10 {
+  background-image: url(../images/pic-10.jpg);
+  background-size: cover;
+}
+.box-11 {
+  background-image: url(../images/pic-11.jpg);
+  background-size: cover;
+}
+.box-12 {
+  background-image: url(../images/pic-12.jpg);
+  background-size: cover;
+}
+.box-13 {
+  background-image: url(../images/pic-13.jpg);
+  background-size: cover;
+}
+.box-14 {
+  background-image: url(../images/pic-14.jpg);
+  background-size: cover;
+}
+.box-15 {
+  background-image: url(../images/pic-15.jpg);
+  background-size: cover;
+}
+.box-16 {
+  background-image: url(../images/pic-16.jpg);
+  background-size: cover;
+}
+
 
 section img {
   height: 100%;
