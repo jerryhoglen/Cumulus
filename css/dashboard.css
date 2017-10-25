@@ -1,3 +1,19 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -29,18 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-logo {
   display: none;
-}
-
-.btn {
-  padding: 10px 15px;
-  border-radius: 4px;
-  background-color: #2ECC71;
-  float: right;
-}
-
-.add-new {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .content h2 {
@@ -96,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .showDropdown {
     display: block;
-    background: #fff;
+    background: #3498D8;
   }
   .toggle {
     margin-right: 10px;
@@ -128,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
               Content
 *********************************************/
 .content {
-  margin-left: 5%;
+  margin-left: 10%;
 }
 .boxes {
   display: grid;
