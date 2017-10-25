@@ -9,6 +9,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bitter', serif;
+  font-size: 1.5em;
 }
 
 section {
@@ -16,18 +17,16 @@ section {
 }
 
 h1 {
-  font-size: 48px;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 28px;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   font-weight: 100;
 }
@@ -44,7 +43,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
+  height: 450px;
 }
 
 header nav {
@@ -82,7 +81,6 @@ header nav ul>li>a {
 
 header nav ul>li.btn-outline:hover>a {
   color: #333333;
-  ;
 }
 
 header .hero {
@@ -97,7 +95,7 @@ header h1 {
 
 header .hero p {
   line-height: 1.25em;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .btn {
@@ -227,14 +225,14 @@ header .hero a {
 }
 
 .box h4 {
-  font-size: 50px;
+  font-size: 22px;
   font-weight: normal;
   margin: 40px 0 10px;
   color: #3498DB;
 }
 
 .box h4 span {
-  font-size: 32px;
+  font-size: 22px;
   vertical-align: top;
 }
 
@@ -242,12 +240,12 @@ header .hero a {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 100;
   color: #888888;
-  font-size: 20px;
+  font-size: 16px;
   vertical-align: middle;
 }
 
 .box ul li {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 20px;
   font-weight: 100;
 }
@@ -299,6 +297,22 @@ footer ul li a:hover {
 }
 
 @media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 100;
+  }
   header {
     height: 700px;
   }
@@ -308,12 +322,12 @@ footer ul li a:hover {
     float: right;
     margin-top: -5%;
   }
+  header  .hero p {
+    font-size: 22px;
+  }
   section {
     max-width: 940px;
     margin: 0 auto;
-  }
-  .features-content {
-    padding-top: 10%;
   }
   .features-content h2 {
     color: #ffffff;
@@ -385,6 +399,9 @@ footer ul li a:hover {
   .box.middle {
     min-height: 430px;
     margin: 0 auto;
+  }
+  .box h4 {
+    font-size: 50px;
   }
   footer {
     height: 50px;
