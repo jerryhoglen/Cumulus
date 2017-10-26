@@ -5,6 +5,7 @@ html, body {
 body {
   font-family: 'Raleway', sans-serif;
   color: #333333;
+  line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,18 +97,20 @@ header h1 {
 header .hero p {
   line-height: 1.25em;
   font-size: 16px;
+  padding: 0 0 15px 0;
 }
 
 .btn {
-  padding: 10px 15px;
+  padding: 15px 20px;
   border-radius: 4px;
   background-color: #2ECC71;
+  text-transform: uppercase;
 }
 
 header .hero a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .btn:hover {
@@ -337,6 +340,7 @@ footer ul li a:hover {
   }
   .features-content p {
     color: #ffffff;
+    padding-bottom: 10px;
   }
   .features-content a {
     text-decoration: none;
