@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-  width: 100%;
+  width: 80%;
   margin: 30px;
   font-size: 12px;
 }
@@ -291,6 +291,7 @@ footer {
   #profile-image {
     display: contents;
   }
+
   #profile-image li {
     float: right;
     display: inline;
@@ -300,10 +301,11 @@ footer {
     margin-top: 30px;
     padding-right: 5px;
   }
-
   .site-logo {
     display: contents;
   }
+
+
   .content {
     margin: 0 auto;
     width: 95%;
@@ -325,14 +327,12 @@ footer {
     margin: 25px 0 25px 0;
     margin-left: 10%;
     margin-right: 10%;
-
   }
   .copyright-block {
     font-size: 18px;
     display: inline;
   }
   .link-block ul {
-    margin-right: 20%;
     float: right;
     margin-top: -30px;
   }
