@@ -45,14 +45,6 @@ section h2 {
   padding-bottom: 10px;
 }
 
-#profile-image {
-  display: none;
-}
-
-.site-logo {
-  display: none;
-}
-
 .box-1 {
   background-image: url(../images/pic-1.jpg);
   background-size: cover;
@@ -124,6 +116,9 @@ section img {
   width: 100%;
 }
 @media (max-width:768px) {
+  header {
+    display: none;
+  }
   h1, h2, h3, h4, h5, h6 {
     font-size: 1.25em;
   }
@@ -260,6 +255,8 @@ footer .link-block {
 
 @media (min-width: 768px) {
   header {
+    display: flex;
+    justify-content: space-between;
     margin: 20px 10% 0 10%;
     width: 80%;
   }
@@ -320,12 +317,6 @@ footer .link-block {
     margin-top: 30px;
     padding-right: 5px;
   }
-  #profile-image {
-    display: contents;
-  }
-  .site-logo {
-    display: contents;
-  }
   .box-size {
     margin: 0;
   }
@@ -336,7 +327,7 @@ footer .link-block {
   }
   .photo-layout {
     margin: 0 auto;
-    padding: 0 5% 5% 5%;
+    padding: 0 5% 75px 5%;
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 300px));
     grid-template-rows: repeat(4,minmax(150px, 300px));
